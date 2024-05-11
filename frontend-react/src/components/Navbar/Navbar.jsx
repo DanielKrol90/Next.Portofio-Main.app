@@ -1,10 +1,22 @@
-import { React, Image } from 'react'
+import React from 'react'
 
+import { images } from '../../constants'
 
 const Navbar = () => {
   return (
     <nav>
-      <Image src="src" alt="logo" width={100} height={100} />
+      <div>
+        <img src={images.logo} alt="logo"/>
+      </div>
+      <ul>
+        {['Strona Głóna', 'O Mnie', 'Praca', 'Umiejętności', 'Kontakt' ].map((item) => (
+          <li key={`link-${item}`}>
+            <div>
+              <a href={`#${item}`}>{item}</a>
+            </div>
+          </li>
+        ))}
+      </ul>
     </nav>
   )
 }
