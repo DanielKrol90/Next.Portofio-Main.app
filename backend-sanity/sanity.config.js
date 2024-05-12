@@ -4,8 +4,8 @@ import {visionTool} from '@sanity/vision'
 import {schemaTypes} from './schemaTypes'
 
 export default defineConfig({
-  name: 'default',
-  title: 'react.portfolio-main.app',
+  name: 'Project-Portfolio',
+  title: 'PORTFOLIO PROJEKTÓW',
 
   projectId: '3yiuk9hi',
   dataset: 'production',
